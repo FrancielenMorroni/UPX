@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body-login {
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-de-fundo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;   
+    
+}
+
+.login{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--azul-escuro);
+    border-radius: 5px;
+}
+
+.login-img{    
+    padding: 1em;
+    width: 130px;
+    height: 100px;
+    margin: auto 7em;
+}
+
+.login-titulo{
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: var(--preto);
+    text-align: center;
+}
+
+.login-filtro{
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.login-label{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.login-input{
+    border-color: var(--preto);
+    outline: none;
+}
+
+.login-botao{
+    width: 100%;
+    padding: 10px;
+    background-color: var(--amarelo);
+    color: var(--branco);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.login-botao:hover{
+    background-color: var(--branco);
+    text-decoration: none
+}
+
+.login-cadastro{
+    margin-top: 20px;
+    font-size: 14px;
+    color: var(--preto);
+}
+
+.login-cadastro a{
+    color: var(--azul-escuro);
+    text-decoration: none;
+}
+
+.login-cadastro a:hover{
+    text-decoration: underline;
+}
+
+.login-google{
+    margin-bottom: 20px;
+    align-items: center;
+    margin-top: 0.5em;
+}
+
+.login-google-text{
+    align-items: center;
+}
