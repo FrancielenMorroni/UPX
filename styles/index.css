@@ -64,7 +64,7 @@ main {
 }
 .input:hover {
     transition: 0.6s;
-    background-color: #EBECEE;
+    background-color: #dbdbdb;
     border-radius: 12px;
 }
 
@@ -74,7 +74,18 @@ main {
     background-color: #FFFFFF;
     border-radius: 22px;
 }
-
 .anuncio {
-    margin-left: 200px;
+    margin-top: auto;
+    border-radius: 22px;
+    padding: 10px;
+    transition: 0.6s;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 1px 1px #000000;
+    font-size: 14px;
+}
+.anuncio:hover {
+
+    transition: 0.6s;
+    box-shadow: 0px 0px 4px 2px #000000;
+    font-size: 15px;
 }
