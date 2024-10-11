@@ -8,12 +8,76 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header class="">
+    <header class="header">
         <img src="img/logoCarshare.png" alt="Logo do CarShare" class="logo">
-        
+        <div class="">
+            <input type="checkbox" id="menu" class="botao">
+            <label for="menu" class="rotulo">
+                <span class="menu-hamburguer imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">
+                        Mensagens
+                    </a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">
+                        Notificações
+                    </a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">
+                        Viagens
+                    </a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="perfilUsuario.html" class="lista-menu__link">
+                        Meu Perfil
+                    </a>
+                </li>
+                <li class="lista-menu__sair">
+                    <a href="login.html" class="lista-menu__link">
+                        Sair
+                    </a>
+                </li>
+            </ul>
+        </div>        
     </header>
-    <main class="">
-
+    <main>
+        <div class="perfil">
+            <div>
+                <img class="perfil-imagem" src="" alt="">
+            </div>
+            <div>
+                <ul class="perfil-informacoes">
+                    <li class="perfil-lista">
+                        <label class="perfil-label" for="loginPerfil">Login</label>
+                        <input class="perfil-input" type="email" id="loginPerfil" name="email" placeholder="Email" required>
+                        <button class="perfil-botao">Alterar Senha</button>
+                    </li>
+                    <li class="perfil-lista">
+                        <label class="perfil-label" for="nomeUsuario">Nome</label>
+                        <input class="perfil-input" type="text" id="nome" name="nomeUsuario" placeholder="Nome" required>
+                    </li>
+                    <li class="perfil-lista">
+                        <label class="perfil-label" for="cnhUsuario">CNH</label>
+                        <input class="perfil-input" type="text" id="cnhUsuario" name="cnhUsuario" placeholder="CNH" required>
+                    </li>
+                    <li class="perfil-lista">
+                        <label class="perfil-label" for="dataNascimento">Data de Nascimento</label>
+                        <input class="perfil-input" type="date" name="nomeUsuario" id="dataNascimento" placeholder="Insira a data">
+                    </li>
+                    <li class="perfil-lista">
+                        <label class="perfil-label" for="telefone">Telefone</label>
+                        <input class="perfil-input" type="tel" name="telefone" id="telefone" placeholder="Número de Telefone" pattern="\(\d{2}\) \d{4,5}-\d{4}">
+                    </li>
+                    <li class="perfil-lista">
+                        <button class="perfil-botao" type="submit">Salvar Alterações</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </main>
     <footer class="rodape">
         <ul class="rodape-lista">

@@ -1,0 +1,29 @@
+.lista{
+    text-align: center;
+    display: flex;
+    font-size: 18px;
+    padding: 1em 0 0.5em 0;
+}
+
+.lista-carros{
+    position: initial;
+    margin: 0.5em;
+    justify-content: space-between;
+}
+
+.carros-imagem{
+    border-radius: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+    margin: 1em;
+    padding: 0.5em;
+    
+}
+
+.carros-descricao{
+
+}
+
+.carros-descricao-negrito{    
+    font-weight: 600;
+}
