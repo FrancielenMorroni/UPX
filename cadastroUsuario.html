@@ -59,6 +59,10 @@
                 <input class="usuario-input" type="text" id="cnhUsuario" name="cnhUsuario" placeholder="CNH" required>
             </li>
             <li class="cadastro-usuario">
+                <label class="usuario-label" for="cpfUsuario">CPF</label>
+                <input class="cpf" type="text" id="cpf" placeholder="000.000.000-00" oninput="anyKeyPressed(event)" maxlength="14">
+            </li>
+            <li class="cadastro-usuario">
                 <label class="usuario-label" for="email">Email</label>
                 <input class="usuario-input" type="email" id="email" name="email" placeholder="Email" required>            
             </li>
@@ -94,5 +98,6 @@
             </li>
         </ul>
     </footer>
+    <script src="./JS/cpfValidator.js"></script>
 </body>
 </html>
