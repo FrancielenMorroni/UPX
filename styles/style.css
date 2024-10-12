@@ -30,3 +30,19 @@ body {
     font-size: 16px;
     font-weight: 400;
 }
+
+.usuario-botao:hover {
+    transition: 0.6s;
+    box-shadow: 0px 0px 4px 2px #000000;
+    font-size: 15px;
+}
+
+.usuario-botao {
+    margin-top: auto;
+    border-radius: 22px;
+    padding: 5px;
+    transition: 0.6s;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 1px 1px #000000;
+    font-size: 14px;
+}
