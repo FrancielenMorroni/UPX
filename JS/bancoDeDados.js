@@ -1,3 +1,5 @@
+// Tarefa para criar um arquivo json para banco de dados - fa;lta aprimorar e adaptar para e-mail e placa de carro.
+
 const inputTarefa = document.querySelector('.input-tarefa');
 const btnTarefa = document.querySelector('.btn-tarefa');
 const tarefas = document.querySelector('.tarefas');
@@ -7,7 +9,7 @@ function criaLi() {
   return li;
 }
 
-inputTarefa.addEventListener('keypress', function(e) {
+inputTarefa.addEventListener('keypress', function(e) { // adiciona elemento apertando enter
   if (e.keyCode === 13) {
     if (!inputTarefa.value) return;
     criaTarefa(inputTarefa.value);
@@ -75,3 +77,19 @@ function adicionaTarefasSalvas() {
   }
 }
 adicionaTarefasSalvas();
+
+/////////////////// Verificar se o e-mail já está cadastrado ///////////////////
+// Salvara em um arquivo json os e-mails cadastrados na forma de array, quando a pessoal clica em criar, verifica se já ta cadastrado.
+
+let emailsCadastrados = ["saulohr@yahoo.com.br","carlos@gmail.com","marcelada@sougay.com", "marcelada@sougay.com"];
+
+function hasDuplicates(array) {
+    return (new Set(array)).size !== array.length;
+}
+
+if (hasDuplicates(emailsCadastrados) == true) {
+  console.log('Email ja cadastrado');
+  emailsCadastrados.pop();   // Deleta o e-mail recém cadastrado em duplicidade
+}
+
+console.log(emailsCadastrados)
