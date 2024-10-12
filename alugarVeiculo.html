@@ -102,22 +102,30 @@
                 <ul>
                     <li>
                         <label for="cartao">Número do Cartão</label>
-                        <input type="number" name="cartao" id="cartao" placeholder="Número do Cartão">
+                        <input type="number" name="cartao" id="cartao" placeholder="Número do Cartão" required>
                     </li>
                     <li>
                         <label for="validade">Validade</label>
-                        <input type="month" name="validade" id="validade" placeholder="Validade">
+                        <input type="month" name="validade" id="validade" placeholder="Validade" required>
                     </li>
                     <li>
                         <label for="cvv">CVV</label>
-                        <input type="number" maxlength="3" pattern="\d*" name="cvv" id="cvv" placeholder="3 dígitos">
+                        <input type="number" name="cvv" id="cvv" placeholder="3 dígitos" required>
                     </li>
                     <li>
                         <label for="nome-pagamento">Nome</label>
-                        <input type="text" name="nome-pagamento" id="nome-pagamento" placeholder="Nome">
+                        <input type="text" name="nome-pagamento" id="nome-pagamento" placeholder="Nome" required>
                     </li>
                     <li>
-                        <label for=""></label>
+                        <label for="sobrenome-pagamento">Sobrenome</label>
+                        <input type="text" name="sobrenome-pagamento" id="sobrenome-pagamento" placeholder="Sobrenome" required>
+                    </li>
+                    <li>
+                        <label for="cpf-pagamento">CPF</label>
+                        <input type="number" name="cpf-pagamento" id="cpf-pagamento" placeholder="CPF" required>
+                    </li>
+                    <li>
+                        <button type="submit">Confirmar Pagamento</button>
                     </li>
                 </ul>
             </div>
