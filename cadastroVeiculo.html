@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
     <header class="header">
         <img src="img/logoCarshare.png" alt="Logo do CarShare" class="logo">
@@ -46,30 +48,38 @@
     </header>
     <main class="">
         <div class="cadastro">
-        <div>            
-            <h2>Descreva o seu <strong>veículo</strong></h2>
+            <div>
+                <h2 class="cadastro-titulo">Descreva o seu <strong>veículo</strong></h2>
             </div>
             <div class="cadastro-local">
-                <label class="cadastro-label" for="local">Endereço ou Região</label>
-                <input class="input" type="text" id="local" placeholder="Local">
+                <ul>
+                    <li class="cadastro-lista">
+                        <label class="cadastro-label" for="local">Endereço ou Região</label>
+                        <input class="cadastro-input" type="text" id="local" placeholder="Local">
+                    </li>
+                    <li class="cadastro-lista">
+                        <label class="cadastro-label" for="modelo">Modelo</label>
+                        <input class="cadastro-input" type="text" id="modelo" placeholder="Modelo">
+                    </li>
+                    <li class="cadastro-lista">
+                        <label class="cadastro-label" for="ano">Ano</label>
+                         <input class="cadastro-input" type="text" id="ano" placeholder="Ano">     
+                    </li>
+                    <li class="cadastro-lista">
+                        <label class="cadastro-label" for="cor">Cor</label>
+                        <input class="cadastro-input" type="text" id="cor" placeholder="Cor">
+                    </li>
+                    <li class="cadastro-lista">
+                        <label class="cadastro-label" for="decricao">Informações Adicionais</label>
+                        <input class="cadastro-input" type="text" id="descricao" placeholder="Informações Adicionais">
+                    </li>
+                    <li class="cadastro-lista">
+                        <button class="upload-button" type="submit">Enviar</button>
+                    </li>
+                </ul>
             </div>
-
-            <div class="cadastro-carro">
-                <label class="cadastro-modelo" for="modelo">Modelo</label>
-                <input class="input" type="text" id="modelo" placeholder="Modelo">
-            </div>
-
-            <div class="cadastro-carro">
-                <label class="cadastro-ano" for="ano">Ano</label>
-                <input class="input" type="text" id="ano" placeholder="Ano">
-            </div>
-
-            <div class="cadastro-carro">
-                <label class="cadastro-cor" for="cor">Cor</label>
-                <input class="input" type="text" id="cor" placeholder="Cor">
-            </div>
-            <div class="upload-button">
-                <button type="submit">&#10515;</button>
+            <div >
+                
             </div>
 
         </div>
@@ -97,4 +107,5 @@
         </ul>
     </footer>
 </body>
+
 </html>

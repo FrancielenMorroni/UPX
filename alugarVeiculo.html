@@ -88,20 +88,39 @@
             <div>
                 <ul class="lista-pagamentos">
                     <li>
-                        <img src="" alt="Cartão Visa">
+                        <img src="img/visa.png" alt="Cartão Visa">
                     </li>
                     <li>
-                        <img src="" alt="Mastercard">
+                        <img src="img/Mastercard-logo.png" alt="Mastercard">
                     </li>
                     <li>
-                        <img src="" alt="Cartão Elo">
-                    </li>
-                    <li>
-                        <img src="" alt="Pix">
+                        <img src="img/Elo.png" alt="Cartão Elo">
                     </li>
                 </ul>
             </div>
-            
+            <div>
+                <ul>
+                    <li>
+                        <label for="cartao">Número do Cartão</label>
+                        <input type="number" name="cartao" id="cartao" placeholder="Número do Cartão">
+                    </li>
+                    <li>
+                        <label for="validade">Validade</label>
+                        <input type="month" name="validade" id="validade" placeholder="Validade">
+                    </li>
+                    <li>
+                        <label for="cvv">CVV</label>
+                        <input type="number" maxlength="3" pattern="\d*" name="cvv" id="cvv" placeholder="3 dígitos">
+                    </li>
+                    <li>
+                        <label for="nome-pagamento">Nome</label>
+                        <input type="text" name="nome-pagamento" id="nome-pagamento" placeholder="Nome">
+                    </li>
+                    <li>
+                        <label for=""></label>
+                    </li>
+                </ul>
+            </div>
         </div>
     </main>
     <footer class="rodape">
