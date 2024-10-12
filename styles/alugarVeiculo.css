@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+::before
 
 .main-alugar{
     font-family: var(--fonte-principal);
@@ -15,7 +16,8 @@
 }
 
 .alugar-voltar{
-
+    position: relative;
+    margin: 1em;
 }
 
 .voltar-img{
@@ -24,11 +26,13 @@
 }
 
 .alugar-titulo{
-
+    
 }
 
 .titulo-inicial{
-
+    text-align: center;
+    font-weight: 550;
+    font-size: 25px;
 }
 
 .alugar-informacoes{
@@ -60,6 +64,24 @@
 
 }
 
+.carro-informacoes-data{
+
+}
+
+.carro-informacoes-editar{
+    padding: 10px;
+    transition: 0.6s;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.carro-informacoes-editar:hover{
+    transition: 0.6s;
+    border-radius: 22px;
+    background-color: var(--cinza);
+    font-size: 15px;
+}
+
 .pagamento{
 
 }
@@ -78,5 +100,6 @@
 
 .lista-icones-pg{
     transition: 0.6s;
-    width: 30px;
+    width: 20px;
+    display: inline-block;
 }

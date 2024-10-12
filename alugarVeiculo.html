@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,10 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
     <header class="header">
-        <img src="img/logoCarshare.png" alt="Logo do CarShare" class="logo">             
+        <img src="img/logoCarshare.png" alt="Logo do CarShare" class="logo">
         <div class="anuncio">
             <h2 class=""><a href="cadastroVeiculo.html">Anuncie seu Veículo</a></h2>
         </div>
@@ -50,12 +52,10 @@
     <main class="main-alugar">
         <div class="alugar-voltar">
             <a class="voltar-img" href="veiculoSelecionado.html"><img src="img/seta.png" alt=""></a>
-        </div>
 
-        <div class="alugar-titulo">
             <h1 class="titulo-inicial">Confirmar e pagar</h1>
         </div>
-        
+
         <div class="alugar-informacoes">
             <div class="alugar-locador">
                 <h2 class="locador-avaliacao">Esse veículo possui boas avaliações.</h2>
@@ -64,21 +64,21 @@
             <div class="locador-imagem">
                 <img src="img/carro.png" alt="Bom Locador">
             </div>
-        </div>
 
-        <div class="alugar-carro">
-            <div class="carro-titulo">
-                <h2>Sua Viagem</h2>
-            </div>
-
-            <div class="carro-informacoes">
-                <div>
-                    <h3>Datas</h3>
-                    ADICIONAR A DATA AQUI
+            <div class="alugar-carro">
+                <div class="carro-titulo">
+                    <h2>Sua Viagem</h2>
                 </div>
-                <div>
-                    <button>Editar</button>
-                    <!-- subir um box deixando o fundo um cadim escuro com um input de data -->
+
+                <div class="carro-informacoes">
+                    <div class="carro-informacoes-data">
+                        <h3>Datas</h3>
+                        ADICIONAR A DATA AQUI
+                    </div>
+                    <div class="carro-informacoes-editar">
+                        <button>Editar</button>
+                        <!-- subir um box deixando o fundo um cadim escuro com um input de data -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -120,7 +120,8 @@
                     </li>
                     <li>
                         <label for="sobrenome-pagamento">Sobrenome</label>
-                        <input type="text" name="sobrenome-pagamento" id="sobrenome-pagamento" placeholder="Sobrenome" required>
+                        <input type="text" name="sobrenome-pagamento" id="sobrenome-pagamento" placeholder="Sobrenome"
+                            required>
                     </li>
                     <li>
                         <label for="cpf-pagamento">CPF</label>
@@ -156,4 +157,5 @@
         </ul>
     </footer>
 </body>
+
 </html>
