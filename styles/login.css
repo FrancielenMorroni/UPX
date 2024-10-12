@@ -10,19 +10,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;   
-    
+    height: 100vh;
+    margin: 1.5em;
 }
 
 .login{
     width: 100%;
     max-width: 400px;
-    padding: 20px;
-    display: flexbox;
+    padding: 30px;
     justify-content: center;
-    align-items: center;
     border: 1px solid var(--azul-escuro);
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .login-img{    
@@ -39,9 +37,15 @@
     text-align: center;
 }
 
-.login-filtro{
+.login-div{
     margin-bottom: 20px;
     align-items: center;
+}
+
+.login-filtro{    
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
 }
 
 .login-label{
@@ -51,25 +55,31 @@
     text-align: left;
 }
 
-.login-input{
-    border-color: var(--preto);
+.login-input{   
     outline: none;
+    padding: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
 }
 
 .login-botao{
     width: 100%;
     padding: 10px;
-    background-color: var(--amarelo);
-    color: var(--branco);
+    background-color: var(--azul-claro);
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: 22px;
+    font-size: 14px;
     cursor: pointer;
-    text-decoration: none;
+    margin: 1em 1em;
+    transition: 0.6s;
+    box-shadow: 0px 0px 1px 1px var(--azul-claro);
+    font-weight: 500;
 }
 
 .login-botao:hover{
-    background-color: var(--branco);
+    background-color: var(--azul);
     text-decoration: none
 }
 

@@ -22,9 +22,17 @@
     align-items: center;
 }
 
-.anuncio{
-    position: relative;
-    margin: 2em;
+.anuncio {    
+    padding: 10px;
+    transition: 0.6s;
+    font-size: 14px;
+    font-weight: 500;
+}
+.anuncio:hover {
+    transition: 0.6s;
+    border-radius: 22px;
+    background-color: var(--cinza);
+    font-size: 15px;
 }
 
 .botao {
@@ -83,6 +91,12 @@
     text-transform: uppercase;    
 }
 
+.input:hover {
+    transition: 0.6s;
+    background-color: var(--cor-de-fundo);
+    border-radius: 12px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -134,7 +148,7 @@ input[type="date"] {
 }
 
 .botao-pesquisar{
-    background-color: var(--azul-claro);
+    background-color: var(--azul);
     border: none;
     padding: 10px 20px;
     border-radius: 50%;
