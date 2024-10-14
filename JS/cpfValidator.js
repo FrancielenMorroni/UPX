@@ -18,12 +18,10 @@ function validarCpf (cpfFormatado) {
         setTimeout(() => {alert('Número de CPF Inválido')}, 300);
     }
     let cpfArray = Array.from(cpfFormatado.replace(/\D+/g, ''));
-    console.log(cpfArray)
     const cpfv1 = cpfArray.slice(0, -2).reverse();
     const cpfv2 = cpfArray.slice(0, -1).reverse();
     let D1 = calculosDig(cpfv1);
     let D2 = calculosDig(cpfv2);
-    console.log(D1, D2);
     let cpfD1 = cpfArray[9];
     let cpfD2 = cpfArray[10];
     if (cpfD1 != D1 || cpfD2 != D2) {
@@ -70,3 +68,37 @@ const cpfMask = (value) => {
     return value
 }
 */
+
+/////////////////// Verificar se o e-mail já está cadastrado ///////////////////
+// Salvara em um arquivo json os e-mails e cpfs cadastrados na forma de array, quando a pessoa clica em criar, verifica se já ta cadastrado.
+
+let emailsCadastrados = [];
+let cpfCadastrados = [];
+
+function cadastroUsuario() {
+    let email = String((document.getElementById('email')).value);
+    let cpf = String((document.getElementById('cpfUsuario')).value);
+    emailsCadastrados.push = email;
+    cpfCadastrados.push(cpf);
+    let emailsJson = JSON.stringify(emailsCadastrados);
+    let cpfJson = JSON.stringify(cpfCadastrados);
+    localStorage.setItem('emails', emailsJson);
+    localStorage.setItem('cpfs', cpfJson);
+    console.log(cpfJson)
+    if (hasDuplicates(emailsCadastrados) == true) {
+        console.log('Email ja cadastrado! Verifique os dados digitados.');
+        alert('Email ja cadastrado!');
+        emailsCadastrados.pop();   // Deleta o e-mail recém cadastrado em duplicidade
+    }
+    if (hasDuplicates(cpfCadastrados) == true) {
+        console.log('CPF ja cadastrado! Verifique os dados digitados.');
+        alert('CPF ja cadastrado!');
+        cpfCadastrados.pop();   // Deleta o e-mail recém cadastrado em duplicidade
+    }
+}
+
+function hasDuplicates(array) {
+    return (new Set(array)).size !== array.length;
+}
+
+
