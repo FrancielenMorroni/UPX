@@ -18,9 +18,12 @@
                 <form action="#" class="form-pesquisa">
                     <div class="input-filtro">
                         <label class="label-filtro" for="destino">Onde</label>
-                        <input class="input" type="text" id="destino" placeholder="Buscar destinos">
+                        <input type="text" id="search" placeholder="Digite para buscar..." autocomplete="on">
+                        <div id="results"></div>
                     </div>
+                    <div class="content">
 
+                    </div>
                     <div class="input-filtro">
                         <label class="label-filtro" for="checkin">Check-in</label>
                         <input class="input" type="date" id="checkin" placeholder="Insira as datas">
@@ -151,5 +154,6 @@
             </li>
         </ul>
     </footer>
+    <script src="./JS/search.js"></script>
 </body>
 </html>

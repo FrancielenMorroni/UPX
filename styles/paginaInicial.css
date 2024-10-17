@@ -62,3 +62,38 @@ main {
 .carros-descricao-negrito{    
     font-weight: 600;
 }
+
+#search {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    position: relative; /* Para posicionar o dropdown corretamente */
+}
+#results {
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    display: none; /* Inicialmente oculto */
+    position: absolute; /* Para posicionar em relação ao campo de busca */
+    background: white;
+    width: 300px; /* Deve corresponder à largura do campo de busca */
+    z-index: 1;
+    margin-top: 60px; /* Espaço entre o campo de busca e os resultados */
+}
+.result-item {
+    padding: 8px;
+    cursor: pointer;
+}
+.result-item.selected {
+    background-color: #007bff;
+    color: white;
+}
+
+.form-pesquisa {
+    font-size: 15px;
+}
+
+.label-filtro {
+    margin-left: 10px;
+}
