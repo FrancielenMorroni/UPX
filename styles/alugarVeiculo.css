@@ -11,8 +11,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh; 
+    height: 100vh; 
     margin: 1.5em;
+    
 }
 
 .alugar-voltar{
@@ -36,7 +37,9 @@
 }
 
 .alugar-informacoes{
-
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
 }
 
 .alugar-locador{
@@ -69,29 +72,43 @@
 }
 
 .carro-informacoes-editar{
-    padding: 10px;
-    transition: 0.6s;
+    width: 20%;
+    padding: 6px;
+    background-color: var(--azul-claro);
+    border: none;
+    border-radius: 22px;
     font-size: 14px;
+    cursor: pointer;
+    margin: 1em 1em;
+    transition: 0.6s;
+    box-shadow: 0px 0px 1px 1px var(--azul-claro);
     font-weight: 500;
+    text-align: center;
 }
 
 .carro-informacoes-editar:hover{
-    transition: 0.6s;
-    border-radius: 22px;
-    background-color: var(--cinza);
-    font-size: 15px;
+    background-color: var(--azul);
+    text-decoration: none
 }
 
 .pagamento{
-
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
 }
 
 .pagamento-texto{
-
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: var(--preto);
+    text-align: center;
 }
 
 .pagamento-icones{
-
+    padding: 0.5em;
+    width: 130px;
+    
+    margin: auto 7em;
 }
 
 .lista-pagamentos{
@@ -102,4 +119,49 @@
     transition: 0.6s;
     width: 20px;
     display: inline-block;
+}
+
+.pagamento-dados{
+    margin-bottom: 20px;
+}
+
+.lista-dados{
+    padding: 0.2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.dados-label{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.dados-input{
+    outline: none;
+    padding: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+}
+
+.dados-botao{
+    width: 100%;
+    padding: 10px;
+    background-color: var(--azul-claro);
+    border: none;
+    border-radius: 22px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 1em 1em;
+    transition: 0.6s;
+    box-shadow: 0px 0px 1px 1px var(--azul-claro);
+    font-weight: 500;
+}
+
+.dados-botao:hover{
+    background-color: var(--azul);
+    text-decoration: none
 }
