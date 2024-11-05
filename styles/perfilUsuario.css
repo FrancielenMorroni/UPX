@@ -14,19 +14,14 @@
     margin: 1.5em;
     border: 1px solid var(--azul-escuro);
     border-radius: 10px;
+    flex-direction: column;
 }
 
 .perfil-imagem{
-    transition: 0.6s;
-    box-shadow: 0px 0px 0px 0px #032e5f;
-    scale: 50%;
-    border-radius: 10px;
-}
-
-.perfil-imagem:hover{
-    transition: 0.6s;
-    box-shadow: 0px 0px 0px 0px #032e5f;
-    scale: 60%;
+    padding: 1em;
+    width: 130px;
+    height: 100px;
+    margin: auto 7em;
 }
 
 .perfil-informacoes{
