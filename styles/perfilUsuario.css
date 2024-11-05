@@ -33,7 +33,7 @@
 .perfil-lista{
     padding: 0.2em;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
 }
 
 .perfil-label{
