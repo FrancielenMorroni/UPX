@@ -38,8 +38,8 @@
 .alugar-informacoes{
     width: 100%;
     max-width: 400px;
-    padding: 30px;   
-    
+    padding: 30px;  
+       
 }
 
 .alugar-locador{
@@ -47,7 +47,6 @@
 }
 
 .locador-avaliacao{
-
 }
 
 .locador-imagem{
@@ -61,7 +60,9 @@
 }
 
 .carro-titulo{
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .carro-informacoes{
