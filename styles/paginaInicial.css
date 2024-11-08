@@ -10,12 +10,11 @@ header {
 }
 
 .main-index{
-    max-width: 1110px;
     padding: 0 5%;
 }
 
 .lista-carros {
-    max-width: 60%;
+    max-width: 80%;
 }
 
 .perquisa-carro {
@@ -97,3 +96,80 @@ header {
 .inp-filtro{
     text-decoration: none;
 }
+
+.anuncio:hover {
+    transition: 0.8s;
+}
+
+.anuncio {
+    margin-top: 60px;
+    margin-left: 50px;
+    border:#d1d1d1;
+    border-style: solid;
+    border-radius: 15px;
+    background-color: #ffffff;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+  }
+
+  .navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Estilo dos itens principais do menu */
+  .dropdown {
+    margin-top: 3.5%;
+    margin-right: 3%;
+    float: left;
+    overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 20px;
+    color: white;
+  }
+
+  /* Container do menu suspenso */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 15px;
+    min-width: 200px;
+    z-index: 1;
+  }
+
+  /* Estilo dos links dentro do menu suspenso */
+  .dropdown-content a {
+    color: rgb(0, 0, 0);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #8a8a8a;
+    border-radius: 10px;
+  }
+
+  /* Mostrar o menu suspenso ao passar o mouse */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .menuImg {
+    padding: 6px 8px;
+    border-radius: 35px;
+    background-color: #FFFFFF;
+  }
+
