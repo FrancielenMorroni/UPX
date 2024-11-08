@@ -55,10 +55,6 @@ main {
     
 }
 
-.carros-descricao{
-
-}
-
 .carros-descricao-negrito{    
     font-weight: 600;
 }
@@ -66,7 +62,7 @@ main {
 #search {
     width: 300px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px none #ccc;
     border-radius: 4px;
     position: relative; /* Para posicionar o dropdown corretamente */
 }
@@ -96,4 +92,8 @@ main {
 
 .label-filtro {
     margin-left: 10px;
+}
+
+.inp-filtro{
+    text-decoration: none;
 }
