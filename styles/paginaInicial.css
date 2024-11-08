@@ -9,6 +9,10 @@ header {
     padding: 0 5%;
 }
 
+.main-index{
+    max-width: 1110px;
+    padding: 0 5%;
+}
 
 .lista-carros {
     max-width: 60%;
@@ -27,11 +31,6 @@ header {
     transition: 0.6s;
     box-shadow: 0px 0px 0px 0px #032e5f;
     scale: 100%;
-    border-radius: 10px;
-    background: #FFFFFF;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
-    margin: 1em;
-    padding: 0.5em;
 }
 
 .lista{
@@ -48,7 +47,11 @@ header {
 }
 
 .carros-imagem{
-    
+    border-radius: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+    margin: 1em;
+    padding: 0.5em;
     
 }
 
