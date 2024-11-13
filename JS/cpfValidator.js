@@ -74,30 +74,57 @@ const cpfMask = (value) => {
 
 let emailsCadastrados = [];
 let cpfCadastrados = [];
+let cnhCadastrados = [];
 
 function cadastroUsuario() {
     let email = String((document.getElementById('email')).value);
     let cpf = String((document.getElementById('cpfUsuario')).value);
+    let cnh = String((document.getElementById('cnhUsuario')).value);
     emailsCadastrados.push(email);
     cpfCadastrados.push(cpf);
+    cnhCadastrados.push(cnh);
     let emailsJson = JSON.stringify(emailsCadastrados);
     let cpfJson = JSON.stringify(cpfCadastrados);
+    let cnhJson = JSON.stringify(cnhCadastrados);
     localStorage.setItem('emails', emailsJson);
     localStorage.setItem('cpfs', cpfJson);
+    localStorage.setItem('cnhs', cnhJson);
     console.log(email)
     console.log(cpfJson)
-    if (hasDuplicates(cpfCadastrados) === true && hasDuplicates(emailsCadastrados) === true) {
+    console.log(cnhJson)
+    if (hasDuplicates(cnhCadastrados) === true && hasDuplicates(emailsCadastrados) === true && hasDuplicates(cpfCadastrados) === true) {
+        console.log('CNH, CPF e-mail já cadastrados! Verifique os dados digitados.');
+        alert('CNH, CPF e e-mail já cadastrados! Verifique os dados digitados.');
+        cnhCadastrados.pop();
+        cpfCadastrados.pop();
+        emailsCadastrados.pop(); 
+    } else if (hasDuplicates(cpfCadastrados) === true && hasDuplicates(emailsCadastrados) === true) {
         console.log('E-mail e CPF já cadastrados! Verifique os dados digitados.');
         alert('E-mail e CPF já cadastrados! Verifique os dados digitados.');
-        cpfCadastrados.pop();   // Deleta o e-mail recém cadastrado em duplicidade
+        cpfCadastrados.pop();
+        emailsCadastrados.pop();  
+    } else if (hasDuplicates(cnhCadastrados) === true && hasDuplicates(emailsCadastrados) === true) {
+        console.log('CNH e e-mail já cadastrados! Verifique os dados digitados.');
+        alert('CNH e e-mail já cadastrados! Verifique os dados digitados.');
+        cnhCadastrados.pop();
+        emailsCadastrados.pop(); 
+    } else if (hasDuplicates(cnhCadastrados) === true && hasDuplicates(cpfCadastrados) === true) {
+        console.log('CNH e CPF já cadastrados! Verifique os dados digitados.');
+        alert('CNH e CPF já cadastrados! Verifique os dados digitados.');
+        cnhCadastrados.pop();
+        cpfCadastrados.pop(); 
     } else if (hasDuplicates(cpfCadastrados) === true) {
-        console.log('CPF ja cadastrado! Verifique os dados digitados.');
+        console.log('CPF já cadastrado! Verifique os dados digitados.');
         alert('CPF ja cadastrado! Verifique os dados digitados.');
-        cpfCadastrados.pop();   // Deleta o e-mail recém cadastrado em duplicidade
+        cpfCadastrados.pop();   // Deleta o cpf recém cadastrado em duplicidade
     } else if (hasDuplicates(emailsCadastrados) === true) {
-        console.log('Email ja cadastrado! Verifique os dados digitados.');
+        console.log('Email já cadastrado! Verifique os dados digitados.');
         alert('Email ja cadastrado! Verifique os dados digitados.');
         emailsCadastrados.pop();   // Deleta o e-mail recém cadastrado em duplicidade
+    } else if (hasDuplicates(cnhCadastrados) === true) {
+        console.log('CNH já cadastrada! Verifique os dados digitados.');
+        alert('CNH já cadastrada! Verifique os dados digitados.');
+        cnhCadastrados.pop();   
     } else {
         alert('Cadastro finalizado com sucesso!');
     }
