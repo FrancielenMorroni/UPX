@@ -86,12 +86,15 @@ function cadastroUsuario() {
     localStorage.setItem('cpfs', cpfJson);
     console.log(email)
     console.log(cpfJson)
-    if (hasDuplicates(cpfCadastrados) === true) {
+    if (hasDuplicates(cpfCadastrados) === true && hasDuplicates(emailsCadastrados) === true) {
+        console.log('E-mail e CPF já cadastrados! Verifique os dados digitados.');
+        alert('E-mail e CPF já cadastrados! Verifique os dados digitados.');
+        cpfCadastrados.pop();   // Deleta o e-mail recém cadastrado em duplicidade
+    } else if (hasDuplicates(cpfCadastrados) === true) {
         console.log('CPF ja cadastrado! Verifique os dados digitados.');
         alert('CPF ja cadastrado! Verifique os dados digitados.');
         cpfCadastrados.pop();   // Deleta o e-mail recém cadastrado em duplicidade
-    }
-    if (hasDuplicates(emailsCadastrados) === true) {
+    } else if (hasDuplicates(emailsCadastrados) === true) {
         console.log('Email ja cadastrado! Verifique os dados digitados.');
         alert('Email ja cadastrado! Verifique os dados digitados.');
         emailsCadastrados.pop();   // Deleta o e-mail recém cadastrado em duplicidade
