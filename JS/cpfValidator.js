@@ -85,15 +85,17 @@ function cadastroUsuario() {
     localStorage.setItem('emails', emailsJson);
     localStorage.setItem('cpfs', cpfJson);
     console.log(cpfJson)
-    if (hasDuplicates(emailsCadastrados) == true) {
+    if (hasDuplicates(emailsCadastrados) === true) {
         console.log('Email ja cadastrado! Verifique os dados digitados.');
         alert('Email ja cadastrado!');
         emailsCadastrados.pop();   // Deleta o e-mail recém cadastrado em duplicidade
     }
-    if (hasDuplicates(cpfCadastrados) == true) {
+    if (hasDuplicates(cpfCadastrados) === true) {
         console.log('CPF ja cadastrado! Verifique os dados digitados.');
         alert('CPF ja cadastrado!');
         cpfCadastrados.pop();   // Deleta o e-mail recém cadastrado em duplicidade
+    } else {
+        alert('Cadastro finalizado com sucesso!');
     }
 }
 
