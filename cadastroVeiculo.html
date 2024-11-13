@@ -12,44 +12,22 @@
 <body>
     <header class="header">
         <a href="index.html"><img src="img/logoCarshare.png" alt="Logo do CarShare" class="logo"> </a>
-        <div class="">
-            <input type="checkbox" id="menu" class="botao">
-            <label for="menu" class="rotulo">
-                <span class="menu-hamburguer imagem"></span>
-            </label>
-            <ul class="lista-menu">
-                <li class="lista-menu__item">
-                    <a href="index.html" class="lista-menu__link">
-                        Página Inicial
-                    </a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">
-                        Mensagens
-                    </a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">
-                        Notificações
-                    </a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">
-                        Viagens
-                    </a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="perfilUsuario.html" class="lista-menu__link">
-                        Meu Perfil
-                    </a>
-                </li>
-                <li class="lista-menu__sair">
-                    <a href="login.html" class="lista-menu__link">
-                        Sair
-                    </a>
-                </li>
-            </ul>
+
+        <div class="dropdown">
+            <button class="dropbtn">
+                <img class="menuImg" src="img/menu.png">
+            </button>
+            <div class="dropdown-content">
+              <a href="index.html">Página Inicial</a>
+              <a href="#">Mensagens</a>
+              <a href="#">Notificações</a>
+              <a href="#">Viagens</a>
+              <a href="carrosCadastrados.html">Veículos Cadastrados</a>
+              <a href="perfilUsuario.html">Meu Perfil</a>
+              <a href="login.html">Sair</a>
+            </div>
         </div>
+
     </header>
     <main class="cadastro-main">
         <div class="cadastro">

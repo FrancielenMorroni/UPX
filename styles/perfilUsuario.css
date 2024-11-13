@@ -70,3 +70,7 @@ input[type="text"] {
     background-color: var(--azul);
     text-decoration: none
 }
+
+.rodape {
+    margin-top: 120px;
+}

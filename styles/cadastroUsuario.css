@@ -61,3 +61,7 @@ input[type="text"] {
     font-size: 14px;
     font-weight: 500;
 }
+
+.rodape {
+    margin-top: 120px;
+}
