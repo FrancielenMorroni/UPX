@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu de Navegação Suspenso</title>
+  <style>
+    /* Estilos gerais */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Estilos do menu */
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    .navbar a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: block;
+    }
+
+    /* Estilo dos itens principais do menu */
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+      background-color: #333;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 20px;
+      color: white;
+    }
+
+    /* Container do menu suspenso */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #444;
+      min-width: 160px;
+      z-index: 1;
+    }
+
+    /* Estilo dos links dentro do menu suspenso */
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #555;
+    }
+
+    /* Mostrar o menu suspenso ao passar o mouse */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Mudar a cor ao passar o mouse sobre o botão principal */
+    .dropdown:hover .dropbtn {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+
+
+
+    <div class="dropdown">
+      <button class="dropbtn">Serviços</button>
+      <div class="dropdown-content">
+        <a href="#">Consultoria</a>
+        <a href="#">Desenvolvimento Web</a>
+        <a href="#">Marketing Digital</a>
+        <a href="#">História</a>
+        <a href="#">Equipe</a>
+        <a href="#">Carreiras</a>
+      </div>
+    </div>
+
+
+</body>
+</html>
