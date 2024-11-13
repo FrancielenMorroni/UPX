@@ -75,8 +75,11 @@ const cpfMask = (value) => {
 let emailsCadastrados = [];
 let cpfCadastrados = [];
 let cnhCadastrados = [];
+let usuarios = [];
 
 function cadastroUsuario() {
+    let nome = String((document.getElementById('nome')).value);
+    let senha = String((document.getElementById('senha')).value);
     let email = String((document.getElementById('email')).value);
     let cpf = String((document.getElementById('cpfUsuario')).value);
     let cnh = String((document.getElementById('cnhUsuario')).value);
@@ -126,12 +129,29 @@ function cadastroUsuario() {
         alert('CNH já cadastrada! Verifique os dados digitados.');
         cnhCadastrados.pop();   
     } else {
+        const usuario = criaPessoas(nome, email, cpf, cnh, senha)
+        usuarios.push(usuario);
+        let usuariosJson = JSON.stringify(usuarios);
+        localStorage.setItem('usuarios', usuariosJson);
+        console.log(usuario);
+        console.log(usuarios);
+        console.log(usuariosJson);
         alert('Cadastro finalizado com sucesso!');
     }
 }
 
 function hasDuplicates(array) {
     return (new Set(array)).size !== array.length;
+}
+
+function criaPessoas (nome, email, cpf, cnh, senha) {
+    return {
+        nome: nome,
+        email: email,
+        cpf: cpf,
+        cnh: cnh,
+        senha: senha
+    }
 }
 
 const content = document.querySelector(".content");
@@ -163,3 +183,4 @@ fetch("https://jsonplaceholder.typicode.com/users")
       items.push(user.name);
     });
   });
+
