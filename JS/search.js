@@ -589,8 +589,8 @@ function selectItem(item) {
 }
 
 
-    document.getElementById('clearButton').addEventListener('click', function() {
-        const lista = document.querySelector('.lista');
-        lista.innerHTML = ''; // Limpa todos os itens da lista
-    });
+document.getElementById('clearButton').addEventListener('click', function() {
+    const lista = document.querySelector('.lista');
+    lista.innerHTML = ''; // Limpa todos os itens da lista
+});
 

@@ -7,6 +7,8 @@
     <title>UPX</title>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/cadastroVeiculo.css">
+</head>
 </head>
 
 <body>
@@ -39,6 +41,7 @@
                     <li class="cadastro-lista">
                         <label class="cadastro-label" for="local">Endereço ou Região</label>
                         <input class="cadastro-input" type="text" id="local" placeholder="Local">
+                        <div id="results"></div>
                     </li>
                     <li class="cadastro-lista">
                         <label class="cadastro-label" for="modelo">Modelo</label>
@@ -57,7 +60,7 @@
                         <input class="cadastro-input" type="text" id="descricao" placeholder="Informações Adicionais">
                     </li>
                     <li class="cadastro-lista">
-                        <button class="cadastro-botao" type="submit">Enviar</button>
+                        <button class="cadastro-botao" type="button" onclick="cadastroCar()">Enviar</button>
                     </li>
                 </ul>
             </div>
@@ -85,6 +88,6 @@
             </li>
         </ul>
     </footer>
+    <script src="./JS/carCreator.js"></script>
 </body>
-
 </html>

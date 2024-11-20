@@ -74,7 +74,7 @@ header {
     background: white;
     width: 300px; /* Deve corresponder à largura do campo de busca */
     z-index: 1;
-    margin-top: 60px; /* Espaço entre o campo de busca e os resultados */
+    margin-top: 73px; /* Espaço entre o campo de busca e os resultados */
 }
 .result-item {
     padding: 8px;

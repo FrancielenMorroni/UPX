@@ -100,7 +100,9 @@ function cadastroUsuario() {
         alert('CNH, CPF e e-mail já cadastrados! Verifique os dados digitados.');
         cnhCadastrados.pop();
         cpfCadastrados.pop();
-        emailsCadastrados.pop(); 
+        emailsCadastrados.pop();
+    } else if (nome == '' || senha == '' || email == '' || cpf == '' || cnh == '') {
+        alert ('Todos os campos devem ser preenchidos!')
     } else if (hasDuplicates(cpfCadastrados) === true && hasDuplicates(emailsCadastrados) === true) {
         console.log('E-mail e CPF já cadastrados! Verifique os dados digitados.');
         alert('E-mail e CPF já cadastrados! Verifique os dados digitados.');
@@ -184,3 +186,4 @@ fetch("https://jsonplaceholder.typicode.com/users")
     });
   });
 
+  
